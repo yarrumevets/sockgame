@@ -62,7 +62,7 @@ const protocol = window.location.protocol === "https:" ? "wss" : "ws";
 const websocketUrl = `${protocol}://${host}/sockgamesock`;
 console.log("websocket url: ", websocketUrl);
 const connection = new WebSocket(websocketUrl); // wss://localhost/sockchatsock
-// const connection = new WebSocket("ws://localhost:5999");
+// const connection = new WebSocket("ws://localhost:5997");
 
 connection.onopen = () => {
   console.log("Connected to server...");
