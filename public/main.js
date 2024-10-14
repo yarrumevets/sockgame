@@ -1,4 +1,4 @@
-import { generateKeyCapture } from "/keyboard.js";
+import { generateKeyCapture } from "./keyboard.js";
 
 const keyboard = generateKeyCapture();
 keyboard.initKeyboard();
@@ -59,8 +59,11 @@ let averageFrameRate = 0;
 // Connect to server.
 const host = window.location.hostname;
 const protocol = window.location.protocol === "https:" ? "wss" : "ws";
-// const connection = new WebSocket(`${protocol}://${host}/sockchatsock`); // wss://localhost/sockchatsock
-const connection = new WebSocket("ws://localhost:5999");
+const websocketUrl = `${protocol}://${host}/sockgamesock`;
+console.log("websocket url: ", websocketUrl);
+const connection = new WebSocket(websocketUrl); // wss://localhost/sockchatsock
+// const connection = new WebSocket("ws://localhost:5999");
+
 connection.onopen = () => {
   console.log("Connected to server...");
   // Keep alive.
