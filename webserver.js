@@ -6,7 +6,7 @@ const { rectRectCollisionCheck, rectfromGameObject } = require("./collision");
 // Servers.
 const app = express();
 const port = 4323;
-const websocketServer = new WebSocket.Server({ port: 5998 });
+const websocketServer = new WebSocket.Server({ port: 5997 });
 const sockets = [];
 let guestCount = 0;
 
