@@ -161,7 +161,7 @@ const showMainMenu = () => {
   ctx.textAlign = "center";
   ctx.fillStyle = "#000000";
   ctx.font = "30px Arial";
-  ctx.fillText("Multiplayer Game", gameWidth / 2, 200);
+  ctx.fillText("Multiplayer Pong", gameWidth / 2, 200);
   ctx.font = "15px Arial";
   ctx.fillText("Press Enter to join the game...", gameWidth / 2, 350);
   document.addEventListener("keydown", startGame);

@@ -1,2 +1,8 @@
 .DS_Store
-node_modules
+Thumbs.db
+Desktop.ini
+*.code-workspace
+.vscode
+node_modules/
+*.log
+.env

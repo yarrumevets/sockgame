@@ -4,21 +4,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Multiplayer Game</title>
+    <title>Multiplayer Game POC</title>
   </head>
   <body>
-    <h1>Multiplayer Game</h1>
+    <h1>Multiplayer Pong</h1>
+
     <main><p class="score" id="scoreP1">0</p>
       <canvas id="game"></canvas>
     <div><p class="score" id="scoreP2">0</p>
     </main>
-    <!-- <p id="status">- - - - -</p> -->
     <p id="status2">- - - - -</p>
     <div id="spriteImageContainer">
       <img id="ball" src="ball.png" alt="" />
       <img id="paddle-a" src="paddle-a.png" alt="" />
       <img id="paddle-b" src="paddle-b.png" alt="" />
     </div>
+    <p id="how-to-title">How to play:</p>
+    <ul id="how-to-list">
+      <li>Press enter to start the game</li>
+      <li>Use the &uparrow; &amp; &downarrow; keys to controll your paddle</li>
+      <li>A second player must join in order for score to be counted</li>
+      <li>Additional players will become spectators</li>
+    </ul>
+    <p id="note">Note: This is a proof-of-concet only intended to demonstrate some of the core concepts of a multiplayer web-based real-time game</p>
     <script src="main.js" type="module"></script>
   </body>
 </html>
