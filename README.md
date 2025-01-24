@@ -75,4 +75,4 @@ Google official icons: https://about.google/brand-resource-center/logos-list/
 
 ## Live Demo
 
-&#128073; [Live Demo of my resumé](https://yarrumevets.com/sockgame) &#128072;
+&#128073; [Live Demo](https://yarrumevets.com/sockgame) &#128072;
